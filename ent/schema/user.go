@@ -43,7 +43,8 @@ func (User) Fields() []ent.Field {
 		field.String("name").
 			NotEmpty().
 			Comment("Name of user (Ten nguoi dung)"),
-		field.Text("email").
+		field.String("email").
+			Optional().
 			Unique().
 			Comment("Email of user (sdt)"),
 		field.Text("phone").
