@@ -208,7 +208,7 @@ var (
 		{Name: "hashed_pwd", Type: field.TypeString},
 		{Name: "is_superuser", Type: field.TypeBool, Default: false},
 		{Name: "name", Type: field.TypeString},
-		{Name: "email", Type: field.TypeString, Unique: true, Size: 2147483647},
+		{Name: "email", Type: field.TypeString, Unique: true, Nullable: true},
 		{Name: "phone", Type: field.TypeString, Nullable: true, Size: 2147483647},
 		{Name: "address", Type: field.TypeString, Nullable: true, Size: 2147483647},
 	}
